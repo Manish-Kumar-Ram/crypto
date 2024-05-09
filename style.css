@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+/* border: 2px solid red; */
+
+width: 100%;
+padding: 2.5rem;
+
+ /* Add a background color if needed */
+z-index: 1000; /* Ensure header is above other content */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+header img{
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+}
+header  .navlinks a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(236, 86%, 54%);
+
+}
+header .navlinks{
+    padding: 1rem;
+}
+#animated-text {
+    display: inline-block;
+}
+
+
+    /* background-image: linear-gradient(45deg,#ffffff15,#ffffff0e); */
+
+/* border: 2px solid red; */
+
+
+/* header{
+    width: 100%;
+    
+    background-image: url(logo.png);
+  
+     
+     background-repeat: no-repeat;
+     width: 80px;
+     background-position: center;
+     height: 80px;
+     background-size: cover;
+      padding-left: 20px; 
+    margin-left: 120px;
+    margin-top: 20px;
+    } */
+   
+   
+body{
+background-color: #020419;
+color: white;
+}
+
+header p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+}
+.container{
+  padding: 2rem;
+    
+    
+}
+.container .left{
+    /* border: 2px solid red; */
+    
+}
+.container .left h1{
+    font-size: 4rem;
+}
+.container .left a{
+    text-decoration: none;
+    
+    background-color: hsl(236, 86%, 54%);
+    padding: 1rem 4rem ;
+    margin: 22px;
+   border-radius: 10px;
+    color: white;
+   display: inline-block;
+}
+
+.container{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+    /* border: 2px solid red; */
+}
+.left h1,p{
+    margin: 15px;
+}
+.container img{
+    width: 32rem;
+    height: 30rem;
+}
+.hamburger-menu {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+   
+}
+
+.bar {
+    background-color: white;
+    color: white;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+.top-coins-content h1{
+text-align: center;
+color: white;
+}
+.img {
+    animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+.top-coins{
+    padding: 2rem;
+}
+.top-coins-content{
+display: flex;
+gap: 1.5rem;
+align-items: center;
+overflow-y: hidden;
+overflow-x: scroll;
+}
+.top-coins-content::-webkit-scrollbar{
+    display: none;
+}
+.coin{
+/* background-color: #020419; */
+border: 2px solid white;
+    min-width: 20rem;
+    display: flex;
+    align-items: center;
+    transition: 0.5s all ease-in;
+    padding: 0.5rem;
+    opacity: 0.8;
+    border-radius: 10px;
+    /* justify-content: center; */
+}
+
+.coin:hover{
+    border: 2px solid #1e2bba;
+}
+.coin img{
+    margin-right: 2rem;
+    border-radius: 50px;
+}
+.signle-crypto-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.signle-crypto-details h1{
+    display: flex;
+    
+}
+
+.left{
+width: 20%;
+}
+.right{
+    
+    margin-bottom:1rem;
+    width: 80%;
+}
+.right h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.right p{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+#form1{
+width: 50vw;
+margin: 2rem auto;
+}
+#form1 input, button{
+
+margin: 0.25rem 0;
+}
+#form1 input{
+
+width: 70%;
+padding: 6px 12px;
+border: none;
+border: 1px solid #1e2bba;
+background-color: transparent;
+/* box-shadow: 2px 4px 3px 2px rgba(234, 225, 225, 0.6); */
+border-radius: 5px;
+font-size: 1rem;
+color: white;
+}
+#form1 input:focus{
+
+}
+#form1 input::placeholder{
+
+color: #fff;
+
+}
+#form1 button{
+
+width: 20%;
+padding: 6px 12px;
+background-color: #1e2bba;
+color: white;
+font-size: 1rem;
+border: none;
+outline: none;
+border-radius: 5px;
+}
+#form1 button:hover{
+
+background-color: #020419;
+border: 1px solid #1e2bba;
+}
+#search-result .result{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px 3px rgba(184, 179, 179, 0.5);
+    margin: 1rem 0;
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: rgb(255, 255, 255);
+    background-color:#020419;
+    transition: all ease-in-out 0.5s;
+    overflow-x: hidden;
+    overflow-y: none;
+}
+#search-result .result:hover{
+    border: 4px solid #1e2bba;
+    transform: scale(1.1);
+    
+}
+
+.result .left{
+    width: 80%;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+/* align-items: center; */
+}
+.result .left *{
+
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+}
+.result .a{
+   font-size: 1.2rem;
+   text-decoration: none;
+   background-color: black;
+   padding: 8px 15px;
+   color: white;
+   border-radius: 8px;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+#search-result .result img{
+    width: 20%;
+    height: 20%;
+    border-radius: 8px 8px 0 0;
+}
+
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(50);
+    }
+    100% {
+        transform: translateY(-50px); /* Adjust the value as needed */
+    }
+}
+
+
+
+@media (max-width: 750px)  and  (min-width:450px){
+    .container{
+        flex-direction: column;
+    }
+    .container img{
+        width: 100%;
+        height: 100%;
+
+    }
+    .container img{
+        margin-top: 20px;
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(10);
+            }
+            100% {
+                transform: translateY(-10px); /* Adjust the value as needed */
+            }
+        }
+    }
+
+    .left{
+        margin-top: 20px;
+    }
+    .right{
+        margin-top: 20px;
+    }
+    .top-coins-content{
+flex-direction: column;
+width: 100%;
+    }
+    .coin{
+        width: 20%;
+        text-align: center;
+        height: 12rem;
+        flex-direction: column;
+        overflow:hidden;
+    }
+    header .navlinks a{
+        display: block;
+        text-align: center;
+        /* width: 100%; */
+    
+  
+    }
+
+  
+}
+

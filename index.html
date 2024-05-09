@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="logo.png" alt="">
+                    <h1 style="font-size: 1.3rem;">CryptoView
+                        <span style="color: hsl(236, 86%, 54%);">Trading</span>
+                    </h1>
+    </div>
+    <div class="navlinks">
+        <a href="search.html">Search</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+    </div>
+   
+   </header>
+
+    <section class="container">
+        <div class="left">
+            <h1 id="animated-text"><span id="animated-span">Crypto</span> <span style="color:hsl(236, 86%, 54%);">View </span></h1>
+
+<!-- <h1 id="animated-text" style=" 
+    ">Crypto <span style="color:hsl(236, 86%, 54%);">View</span> </h1 -->
+            <p>A platform to view information about all cryptocurrencies live</p>
+ <a href="#coinss">View All Coins</a>      
+        </div>
+        <div class="img">
+            <img src="cry.png" alt="">
+        </div>
+    </section>
+    <section class="top-coins"  id="coinss">
+        <h2 style="text-align: center; margin-bottom:2rem">Top Coins</h2>
+        <div class="top-coins-content" style="display: flex; ">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="text">
+            <p style="text-align: center;">&copy; CRYPTOVIEW Devlop by Manish Kumar Ram</p>
+        <a href="#" style="color: white;"><i class="fa-solid fa-github"></i></a>
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.container .left h1', { delay: 500 });
+        ScrollReveal().reveal('.container .left p', { delay: 800 });
+        ScrollReveal().reveal('.container .left a', { delay: 1000 });
+        ScrollReveal().reveal('header .navlinks   ', { delay: 1000 });
+        ScrollReveal().reveal('.container .left a', { delay: 1000 });
+        ScrollReveal().reveal('.logo img ', { delay: 1000, origin: 'right' });
+        ScrollReveal().reveal('h1 h2 h3 h4 h5 h6 p ', { delay: 1000, origin: 'right' });
+    </script>
+    <script>
+        // Cryptocurrency names
+        const cryptocurrencies = [
+            "Bitcoin",
+            "Ethereum",
+            "Ripple",
+            "Litecoin",
+            "Cardano",
+            "Stellar",
+            "Chainlink",
+            "Polkadot",
+            "Bitcoin Cash",
+            "Dogecoin"
+        ];
+    
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('#animated-text', {
+            duration: 1000,
+            origin: 'left',
+            distance: '50px',
+            delay: 200,
+            reset: true,
+            opacity: 0,
+            easing: 'ease-in-out',
+            mobile: true,
+            useDelay: 'always',
+            viewFactor: 0.2,
+            beforeReveal: function (el) {
+                animateCryptocurrencies(el);
+            }
+        });
+    
+        function animateCryptocurrencies(element) {
+            const span = element.querySelector('#animated-span');
+            let index = 0;
+            setInterval(function () {
+                span.textContent = cryptocurrencies[index];
+                index = (index + 1) % cryptocurrencies.length;
+            }, 2000); // Change text every 2 seconds
+        }
+    </script>
+       
+    
+</body>
+</html>
